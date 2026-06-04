@@ -56,19 +56,3 @@ Modify the `config.yaml` file to adjust model hyperparameters.
 python train.py --config_files=config.yaml
 ```
 
-## Model Overview
-
-MuAdRec is a multimodal sequential recommendation model that integrates:
-- Text embeddings
-- Image embeddings
-- ID embeddings
-- Adaptive null space
-- Hierarchical injection mechanism
-- Cross-modal alignment
-
-## Evaluation Metrics
-
-The model evaluates the following metrics:
-- HR@1, HR@5, HR@10, HR@20, HR@50 (Hit Ratio)
-- NDCG@1, NDCG@5, NDCG@10, NDCG@20, NDCG@50
-- MRR@1, MRR@5, MRR@10, MRR@20, MRR@50
