@@ -1,0 +1,54 @@
+
+random_seed: 22
+data: ASO
+cuda: 0
+
+# model
+model_type: MuAdRec
+hidden_dim: 256
+null_dim: 128
+null_thres: null
+standardization: true
+cover: false
+ID_embs_init_type: normal
+
+# optimization
+lr: 0.001
+l2_decay: 0.000001
+batch_size: 256
+epoch: 500
+
+# loss
+loss_type: infoNCE
+neg_ratio: 64
+temperature: 0.07
+
+# adaptive null dimension innovations
+adaptive_null_dim: true
+adaptive_null_min_dim: 32
+adaptive_null_gamma: 1.0
+adaptive_null_strategy: inv_pop
+
+# hierarchical injection innovations
+hier_inject: true
+hier_inject_pre_attn: true
+hier_inject_post_attn: true
+
+# multimodal innovations
+use_shared_null_inject: true
+use_cross_modal_null_align: true
+modal_fuse_alpha: 0.6
+align_temperature: 0.3
+image_embs_scale: 40
+strict_null_only_inject: true
+
+# keep for compatibility
+language_model_type: 3large
+language_embs_scale: 40
+
+# log
+log_file: null
+
+beta_mm: 0.2
+
+hier_inject_use_gate: true
