@@ -1,6 +1,6 @@
 # MuAdRec
 
-Multimodal Sequential Recommender System
+MuAdRec: Multi-modal Null Space Fusion with Adaptive Dimension for Sequential Recommendation
 
 ## Environment Requirements
 
